@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+//Tugas Latihan UAS Membuat Program dengan Function Pengecekan Bilangan Prima atau Bukan
+int main ( )
+{
+	int n, i;
+	bool prima = true;
+	
+	cout << " Masukkan angka : ";
+	cin >> n;
+	for (int i = 2; i < n / 2; ++i)
+	{
+		if (n%i == 0)
+		{
+			prima = false;
+			break;
+		}
+	}
+	if (prima)
+		cout << " Bilangan tersebut adalah bilangan prima ";
+	else
+		cout << " Bilangan tersebut adalah bukan bilangan prima ";
+	return 0;
+}
